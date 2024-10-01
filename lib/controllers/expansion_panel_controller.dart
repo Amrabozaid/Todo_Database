@@ -4,7 +4,7 @@ import '../models/expansion_panels.dart';
 import '../models/small_todo.dart';
 
 class ExpansionPanelController {
-  final Box _smallTodoBox = Hive.box('smallTodosBox');
+  final Box<SmallTodo> _smallTodoBox = Hive.box<SmallTodo>('smallTodosBox');
   List<ExpansionPanels> allPanels = [];
 
   Future<void> addPanel(ExpansionPanels panel) async {

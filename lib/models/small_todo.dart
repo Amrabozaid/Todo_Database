@@ -3,7 +3,7 @@ import 'package:uuid/uuid.dart';
 
 part 'small_todo.g.dart';
 @HiveType(typeId: 0)
-class SmallTodo{
+class SmallTodo extends HiveObject {
   @HiveField(0)
   String id;
   

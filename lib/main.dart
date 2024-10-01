@@ -8,7 +8,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
   Hive.registerAdapter(SmallTodoAdapter());
-  await Hive.openBox('smallTodosBox');
+  await Hive.openBox<SmallTodo>('smallTodosBox');
   
   
   runApp(const MyApp());
